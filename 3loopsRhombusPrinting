@@ -1,0 +1,33 @@
+#include <iostream>
+
+int main() {
+  int i, j;
+  int columns = 4;
+  for(i = 0; i < columns; i++){
+    for(j = 0; j <= (columns-1) - i;j++){
+      printf(" ");
+    }
+    for(j = 0;j<=2*i;j++){
+      if(i == 0||j == 0||j == 2*i){
+        printf("*");
+      }else{
+        printf(" ");
+      }
+    }
+    printf("\n");
+  }
+
+  for(i = columns; i >= 0; i--){
+    for(j = 0; j <= (columns-1) - i;j++){
+      printf(" ");
+    }
+    for(j = 0;j<=2*i;j++){
+      if(i == 0||j == 0||j == 2*i){
+        printf("*");
+      }else{
+        printf(" ");
+      }
+    }
+    printf("\n");
+  }
+}
